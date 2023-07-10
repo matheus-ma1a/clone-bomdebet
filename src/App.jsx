@@ -19,7 +19,7 @@ function App() {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.808);
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -28,11 +28,13 @@ function App() {
   `
 
 
+
   return (
     <>
       <Bg />
       <Modal>
         <Cadastro />
+
       </Modal>
     </>
   )
