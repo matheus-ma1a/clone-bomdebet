@@ -1,40 +1,17 @@
-import { useState } from 'react'
-import styled from 'styled-components'
-import Cadastro from './components/Cadastro'
+import Cadastro from "./components/Button/Cadastro"
+// import InputComponent from "./components/Button/InputComponet"
+import { Modal, Bg, Input } from "./styled"
+
 
 
 function App() {
-
-  const Bg = styled.div`
-    width: 100vw;
-    height: 100vh;
-    background-image: url("/Screenshot_1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  `
-
-  const Modal = styled.div`
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.808);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  `
-
-
 
   return (
     <>
       <Bg />
       <Modal>
         <Cadastro />
-
+        {/* <InputComponent /> */}
       </Modal>
     </>
   )
